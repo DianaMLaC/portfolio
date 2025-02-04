@@ -7,13 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2.1">
+
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <ul class="nav-links">
-      <li><a href="#about">About me</a></li>
+      <li><a href="#about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -36,7 +37,7 @@
 
   <!-- About Section -->
   <section id="about" class="section">
-    <h2>About me</h2>
+    <h2>About Me</h2>
     <p>I'm a tech fairy, bringing wild ideas to life with a touch of magic and a lot of code. From full-stack development to optimizing systems, I enjoy navigating the challenges and wonders of the digital realm.</p>
     <img src="assets/gradient-waves-no-bg.png" alt="Gradient Waves" class="gradient-waves">
     <div class="tech-stack">
@@ -101,41 +102,20 @@
   </footer>
 </body>
 <script>
-  const hireBtn = document.getElementById('hire-btn');
-  const ctaMessage = document.getElementById('cta-message');
-  const hour = new Date().getHours();
+ const hireBtn = document.getElementById('hire-btn')
+const ctaMessage = document.getElementById('cta-message')
 
-  const greetings = {
-    morning: "Good Morning! Need a Software Engineer?",
-    afternoon: "Good Afternoon! Looking for a Developer?",
-    evening: "Good Evening! Ready to Build Something Great?"
-  };
+hireBtn.addEventListener('mouseenter', () => {
+  ctaMessage.textContent = "Download CV"
+})
 
-  if (hour < 12) {
-    ctaMessage.textContent = greetings.morning;
-  } else if (hour < 18) {
-    ctaMessage.textContent = greetings.afternoon;
-  } else {
-    ctaMessage.textContent = greetings.evening;
-  }
+hireBtn.addEventListener('mouseleave', () => {
+  ctaMessage.textContent = ""
+});
 
-  hireBtn.addEventListener('mouseenter', () => {
-    ctaMessage.textContent = "Click to Download CV";
-  });
-
-  hireBtn.addEventListener('mouseleave', () => {
-    if (hour < 12) {
-      ctaMessage.textContent = greetings.morning;
-    } else if (hour < 18) {
-      ctaMessage.textContent = greetings.afternoon;
-    } else {
-      ctaMessage.textContent = greetings.evening;
-    }
-  });
-
-  hireBtn.addEventListener('click', () => {
-    window.location.href = "assets/diana_chirica_resume.pdf";
-  });
+hireBtn.addEventListener('click', () => {
+  window.location.href = "assets/diana_chirica_resume.pdf"
+})
 </script>
 
 </html>
