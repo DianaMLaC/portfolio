@@ -23,83 +23,50 @@ body {
   transition: background var(--transition-speed), color var(--transition-speed);
 }
 
-nav.navbar {
-  display: flex;
-  justify-content: center;
-  background: var(--secondary-gradient);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: var(--light-text);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color var(--transition-speed);
-}
-
-.nav-links a:hover {
-  color: #ffffff;
-}
-.cta-container {
+.vertical-nav {
   position: absolute;
-  top: 70px; 
   left: 20px;
+  top: 20%;
+  transform: translateY(-50%);
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 1rem;
   z-index: 2;
 }
 
-#hire-btn {
-  background: var(--primary-gradient);
+.vertical-btn {
+  background: var(--secondary-gradient);
   color: var(--light-text);
   border: 2px solid var(--light-text);
   border-radius: 20px;
   padding: 0.6rem 1.5rem;
   font-weight: bold;
-  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#hire-btn:hover {
+.vertical-btn:hover {
   background: #c31432;
   color: #fff;
   transform: scale(1.05);
 }
 
 
-#cta-message {
-  color: var(--dark-text);
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  opacity: 0; /* Initially hidden */
-}
-
-#hire-btn:hover + #cta-message {
-  color: #fff;
-  cursor: pointer;
-  opacity: 1; /* Show on hover */
-}
-
-
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center; 
   position: relative;
   padding-top: 30px;
   background: var(--light-bg);
   overflow: hidden;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  gap: 100px;  
 }
 
 .gradient-shape {
@@ -113,7 +80,7 @@ nav.navbar {
 }
 
 .profile-photo {
-  width: 400px;
+  height: 400px;
   margin-bottom: -10px;
   margin-right: -60px;
   height: auto;
@@ -127,7 +94,6 @@ nav.navbar {
   z-index: 1;
   position: relative;
   margin-bottom: -260px;
-  /* margin-left:100px; */
 }
 
 .hero-content h1 {
@@ -142,7 +108,6 @@ nav.navbar {
 
 
 .section {
-  /* padding: 3rem 2rem; */
   text-align: center;
 }
 
@@ -151,7 +116,6 @@ h2 {
   color: #ffffff;
   display: inline-block;
   padding: 0.5rem 1rem;
-  /* border-radius: 10px; */
   margin-bottom: 1rem;
   width:100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -170,7 +134,6 @@ h2 {
 
 .gradient-waves {
   width: 100%;
-  /* margin-top: 1rem; */
   height: 300px;
   margin: -40px 0;
 }
@@ -178,14 +141,12 @@ h2 {
 .projects-grid {
   display: flex;
   justify-content: center;
-  /* gap: 2rem; */
   flex-wrap: wrap;
 }
 
 .project-card {
   background: var(--light-bg);
   border: 2px solid;
-  /* border-image: var(--primary-gradient) 1; */
   border-radius: 15px;
   padding: 1rem;
   margin: 1rem;
@@ -265,31 +226,15 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
-  nav.navbar {
-    flex-direction: column;
-    padding: 0.5rem;
+  .vertical-nav {
+    left: 10px;
+    top: 22%;
+    gap: 5px;        
   }
-
-  .nav-links {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .cta-container {
-    top: 50px;
-    left: 5px;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  #hire-btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.7rem;
-  }
-
-  #cta-message {
-    font-size: 0.4rem;
+  
+  .vertical-btn {
+    padding: 0.2rem 0.4rem; 
+    font-size: 0.6rem;   
   }
 
   .hero {
@@ -306,6 +251,10 @@ footer a:hover {
 
   .hero-content p {
     font-size: 10px;
+  }
+
+  .hero-main {
+    gap: 20px;
   }
 
   .profile-photo {
@@ -330,6 +279,8 @@ footer a:hover {
 
   .section p {
     padding: 1em 1.5em;
-    font-size: 8px;
+    font-size: 1em;
   }
+
+
 }

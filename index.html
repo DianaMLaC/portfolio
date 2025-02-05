@@ -7,32 +7,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.2">
+  <link rel="stylesheet" href="styles.css?v=2.3">
 
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="cta-container">
-    <button id="hire-btn">Hire Me</button>
-    <div id="cta-message">Good Morning! Need a Software Engineer?</div>
-  </div>
-
   <!-- Hero Section -->
   <header class="hero">
     <img src="assets/gradient-shape-short.png" alt="Gradient Shape" class="gradient-shape">
-    
-    <div class="hero-content">
-      <h1>&lt;Diana M Chirica&gt;</h1>
-      <p>&lt;Full-Stack Software Engineer&gt;</p>
+    <div class="vertical-nav">
+      <a href="#projects" class="vertical-btn">Projects</a>
+      <a href="#contact" class="vertical-btn">Contact</a>
     </div>
-    <img src="assets/my-photo-no-bg.png" alt="Diana" class="profile-photo">
+    <div class="hero-main">
+      <div class="hero-content">
+        <h1>&lt;Diana M Chirica&gt;</h1>
+        <p>&lt;Full-Stack Software Engineer&gt;</p>
+      </div>
+      <img src="assets/my-photo-no-bg.png" alt="Diana" class="profile-photo">
+    </div>
   </header>
 
   <!-- About Section -->
@@ -93,7 +85,8 @@
     <div class="contact-details">
       <a href="mailto:diana.m.chirica@gmail.com">diana.m.chirica@gmail.com</a> |
       <a href="https://www.linkedin.com/in/diana-chirica/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/DianaMLaC" target="_blank">GitHub</a>
+      <a href="https://github.com/DianaMLaC" target="_blank">GitHub</a> |
+      <a href="assets/diana_chirica_resume.pdf" download>Download CV</a>
     </div>
   </section>
 
@@ -101,21 +94,6 @@
     <p>© Diana M Chirica. All rights reserved.</p>
   </footer>
 </body>
-<script>
- const hireBtn = document.getElementById('hire-btn')
-const ctaMessage = document.getElementById('cta-message')
 
-hireBtn.addEventListener('mouseenter', () => {
-  ctaMessage.textContent = "Download CV"
-})
-
-hireBtn.addEventListener('mouseleave', () => {
-  ctaMessage.textContent = ""
-});
-
-hireBtn.addEventListener('click', () => {
-  window.location.href = "assets/diana_chirica_resume.pdf"
-})
-</script>
 
 </html>
