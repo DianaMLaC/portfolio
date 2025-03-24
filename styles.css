@@ -275,6 +275,11 @@ footer a:hover {
 
   .project-card {
     width: 90%;
+
+  }
+
+  .project-card img {
+    height: 100%;
   }
 
   .section p {
