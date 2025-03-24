@@ -170,7 +170,7 @@ h2 {
 
 .project-card img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-radius: 10px;
   margin: 0.5rem 0;
 }
@@ -276,10 +276,6 @@ footer a:hover {
   .project-card {
     width: 90%;
 
-  }
-
-  .project-card img {
-    height: 100%;
   }
 
   .section p {
