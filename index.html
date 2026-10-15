@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.3">
+  <link rel="stylesheet" href="styles.css?v=2.4">
 
 </head>
 <body>
@@ -27,10 +27,11 @@
     </div>
   </header>
 
+  <main>
   <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I once viewed the tech realm with apprehension; now it’s my playground. Building functional, streamlined software is my creative outlet and intellectual challenge. I live for those ‘aha’ moments that turn problems into powerful, real-world applications.</p>
+    <p>Full-stack engineer who likes owning the whole thing: the Terraform, the serverless plumbing on AWS, the APIs, and the data models underneath. Lately that's meant building a real-time notification service from scratch and teaching some painfully slow endpoints to hurry up, on a live platform with MySQL, PostgreSQL and Elasticsearch all in the mix. TypeScript is my happy place, tests come first, and I live for the ‘aha’ moment when a stubborn problem finally gives in. Based in London.</p>
     <img src="assets/gradient-waves-no-bg.png" alt="Gradient Waves" class="gradient-waves">
     <div class="tech-stack">
       <p>Ruby | TypeScript | JavaScript | SQL | HTML&CSS | Git</p>
@@ -47,7 +48,7 @@
         <h3>Faebook</h3>
         <p>A social platform built with Rails, React, and TypeScript. 
           Features real-time chat, AWS S3 image uploads, and TDD. </p>
-        <img src="assets/faebook-preview.gif" alt="Faebook Preview">
+        <video src="assets/faebook-preview.mp4" poster="assets/faebook-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Faebook preview"></video>
         <div class="project-links">
           <a href="https://faebook.fly.dev/" target="_blank">Live</a>
           <a href="https://github.com/DianaMLaC/faebook" target="_blank">GitHub</a>
@@ -58,7 +59,7 @@
         <h3>Quizardry</h3>
         <p>A quiz app built with Next.js and Supabase for Google OAuth. 
           Users can generate quizzes by category, difficulty, or random.</p>
-        <img src="assets/quizardry-preview.gif" alt="Quizardry Preview">
+        <video src="assets/quizardry-preview.mp4" poster="assets/quizardry-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Quizardry preview"></video>
         <div class="project-links">
           <!-- <a href="#">Live</a> -->
           <a href="https://github.com/DianaMLaC/quizardry" target="_blank">GitHub</a>
@@ -67,7 +68,7 @@
       <div class="project-card">
         <h3>KDFG</h3>
         <p> A community hub for k-drama lovers. Built robust and complex UI components using React.</p>
-        <img src="assets/kdfg-preview.gif" alt="KDFG Preview">
+        <video src="assets/kdfg-preview.mp4" poster="assets/kdfg-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="KDFG preview"></video>
         <div class="project-links">
           <a href="https://kdfg-frontend.vercel.app/" target="_blank">Live</a>
         </div>
@@ -76,7 +77,7 @@
         <h3>Cupid Hearts</h3>
         <p> A JavaScript game similar to Asteroids, powered by HTML Canvas and math-based 
           collision logic.</p>
-        <img src="assets/cupid-hearts-preview.gif" alt="Cupid Hearts Preview">
+        <video src="assets/cupid-hearts-preview.mp4" poster="assets/cupid-hearts-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Cupid Hearts preview"></video>
         <div class="project-links">
           <a href="https://dianamlac.github.io/CupidHearts/" target="_blank">Live</a>
           <a href="https://github.com/DianaMLaC/CupidHearts" target="_blank">GitHub</a>
@@ -85,7 +86,7 @@
       <div class="project-card">
         <h3>Console Chess</h3>
         <p> A terminal-based two-player chess game developed by applying OOP principles and multi‐level inheritance.</p>
-        <img src="assets/chess-preview.gif" alt="Chess Preview">
+        <video src="assets/chess-preview.mp4" poster="assets/chess-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Console Chess preview"></video>
         <div class="project-links">
           <a href="https://github.com/DianaMLaC/Console-Chess" target="_blank">GitHub</a>
         </div>
@@ -101,13 +102,21 @@
       <a href="mailto:diana.m.chirica@gmail.com">diana.m.chirica@gmail.com</a> |
       <a href="https://www.linkedin.com/in/diana-chirica/" target="_blank">LinkedIn</a> |
       <a href="https://github.com/DianaMLaC" target="_blank">GitHub</a> |
-      <a href="assets/diana_chirica_resume.pdf" download>Download CV</a>
+      <a href="assets/Diana_M_Chirica_resume.pdf" download>Download CV</a>
     </div>
   </section>
+  </main>
 
   <footer class="footer">
     <p>© Diana M Chirica. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Respect reduced-motion: show the poster frame instead of autoplaying the previews
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.project-card video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+    }
+  </script>
 </body>
 
 

@@ -3,7 +3,6 @@
   --secondary-gradient: linear-gradient(25deg, #c31432, #240b36);
   --light-bg: #ffffff;
   --light-text: #e0e0e0;
-  --dark-bg: #121212;
   --dark-text: #240b36;
   --transition-speed: 0.3s;
   --font-family: 'Fira Code', monospace;
@@ -80,7 +79,6 @@ body {
 }
 
 .profile-photo {
-  height: 400px;
   margin-bottom: -10px;
   margin-right: -60px;
   height: auto;
@@ -161,16 +159,21 @@ h2 {
 
 .project-card p {
  padding: 0;
- font-size: 12px;
+ font-size: 13px;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
 }
 
-.project-card img {
+.project-card img,
+.project-card video {
+  display: block;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+  background: #f0ecf3;
   border-radius: 10px;
   margin: 0.5rem 0;
 }
@@ -233,8 +236,8 @@ footer a:hover {
   }
   
   .vertical-btn {
-    padding: 0.2rem 0.4rem; 
-    font-size: 0.6rem;   
+    padding: 0.45rem 0.9rem;
+    font-size: 0.8rem;
   }
 
   .hero {
@@ -243,14 +246,15 @@ footer a:hover {
   .hero-content {
     margin-top: -170px;
     margin-left: 0;
+    padding-left: 12px;
   }
 
   .hero-content h1 {
-    font-size: 1rem;
+    font-size: 1.35rem;
   }
 
   .hero-content p {
-    font-size: 10px;
+    font-size: 0.8rem;
   }
 
   .hero-main {
