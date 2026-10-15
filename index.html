@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diana M Chirica Portfolio</title>
+  <title>Diana M Chirica — Full-Stack Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=2.4">
+  <meta name="description" content="Full-stack software engineer building with TypeScript, AWS and Ruby on Rails. Based in London.">
+  <meta name="author" content="Diana M Chirica">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dianamlac.github.io/portfolio/">
+  <meta property="og:title" content="Diana M Chirica — Full-Stack Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer building with TypeScript, AWS and Ruby on Rails. Based in London.">
+  <meta property="og:image" content="https://dianamlac.github.io/portfolio/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diana M Chirica — Full-Stack Software Engineer">
+  <meta name="twitter:description" content="Full-stack software engineer building with TypeScript, AWS and Ruby on Rails. Based in London.">
+  <meta name="twitter:image" content="https://dianamlac.github.io/portfolio/assets/og-image.png">
 
 </head>
 <body>
   <!-- Hero Section -->
   <header class="hero">
-    <img src="assets/gradient-shape-short.png" alt="Gradient Shape" class="gradient-shape">
+    <img src="assets/gradient-shape-short.png" alt="" class="gradient-shape">
     <div class="vertical-nav">
       <a href="#projects" class="vertical-btn">Projects</a>
       <a href="#contact" class="vertical-btn">Contact</a>
@@ -23,7 +36,7 @@
         <h1>&lt;Diana M Chirica&gt;</h1>
         <p>&lt;Full-Stack Software Engineer&gt;</p>
       </div>
-      <img src="assets/my-photo-no-bg.png" alt="Diana" class="profile-photo">
+      <img src="assets/my-photo-no-bg.png" alt="Portrait of Diana M Chirica" class="profile-photo">
     </div>
   </header>
 
@@ -32,7 +45,7 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>Full-stack engineer who likes owning the whole thing: the Terraform, the serverless plumbing on AWS, the APIs, and the data models underneath. Lately that's meant building a real-time notification service from scratch and teaching some painfully slow endpoints to hurry up, on a live platform with MySQL, PostgreSQL and Elasticsearch all in the mix. TypeScript is my happy place, tests come first, and I live for the ‘aha’ moment when a stubborn problem finally gives in. Based in London.</p>
-    <img src="assets/gradient-waves-no-bg.png" alt="Gradient Waves" class="gradient-waves">
+    <img src="assets/gradient-waves-no-bg.png" alt="" class="gradient-waves" loading="lazy">
     <div class="tech-stack">
       <p>Ruby | TypeScript | JavaScript | SQL | HTML&CSS | Git</p>
       <p>React | Redux | Next.js | Rails | Rspec | AWS S3 | jQuery | Axios | PostgreSQL | WebSockets | Tailwind</p>
@@ -46,23 +59,21 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>Faebook</h3>
-        <p>A social platform built with Rails, React, and TypeScript. 
-          Features real-time chat, AWS S3 image uploads, and TDD. </p>
+        <p>Social platform with a Zodiac Academy theme, built with Rails, React and TypeScript. Real-time chat over ActionCable WebSockets, polymorphic post content with automatic URL previews, and image uploads to AWS S3 through ActiveStorage. Backend developed with TDD.</p>
         <video src="assets/faebook-preview.mp4" poster="assets/faebook-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Faebook preview"></video>
         <div class="project-links">
-          <a href="https://faebook.fly.dev/" target="_blank">Live</a>
-          <a href="https://github.com/DianaMLaC/faebook" target="_blank">GitHub</a>
+          <a href="https://faebook.fly.dev/" target="_blank" rel="noopener noreferrer">Live</a>
+          <a href="https://github.com/DianaMLaC/faebook" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3>Quizardry</h3>
-        <p>A quiz app built with Next.js and Supabase for Google OAuth. 
-          Users can generate quizzes by category, difficulty, or random.</p>
+        <p>Quiz platform built with Next.js 15 and TypeScript. Google sign-in via Supabase, quiz generation by category, difficulty or at random, and CSS Modules for styling.</p>
         <video src="assets/quizardry-preview.mp4" poster="assets/quizardry-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Quizardry preview"></video>
         <div class="project-links">
           <!-- <a href="#">Live</a> -->
-          <a href="https://github.com/DianaMLaC/quizardry" target="_blank">GitHub</a>
+          <a href="https://github.com/DianaMLaC/quizardry" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <div class="project-card">
@@ -70,25 +81,24 @@
         <p> A community hub for k-drama lovers. Built robust and complex UI components using React.</p>
         <video src="assets/kdfg-preview.mp4" poster="assets/kdfg-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="KDFG preview"></video>
         <div class="project-links">
-          <a href="https://kdfg-frontend.vercel.app/" target="_blank">Live</a>
+          <a href="https://kdfg-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
         </div>
       </div>
       <div class="project-card">
         <h3>Cupid Hearts</h3>
-        <p> A JavaScript game similar to Asteroids, powered by HTML Canvas and math-based 
-          collision logic.</p>
+        <p>Asteroids-style browser game written in TypeScript on HTML Canvas, with math-based collision detection.</p>
         <video src="assets/cupid-hearts-preview.mp4" poster="assets/cupid-hearts-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Cupid Hearts preview"></video>
         <div class="project-links">
-          <a href="https://dianamlac.github.io/CupidHearts/" target="_blank">Live</a>
-          <a href="https://github.com/DianaMLaC/CupidHearts" target="_blank">GitHub</a>
+          <a href="https://dianamlac.github.io/CupidHearts/" target="_blank" rel="noopener noreferrer">Live</a>
+          <a href="https://github.com/DianaMLaC/CupidHearts" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <div class="project-card">
         <h3>Console Chess</h3>
-        <p> A terminal-based two-player chess game developed by applying OOP principles and multi‐level inheritance.</p>
+        <p>Terminal two-player chess game in Ruby, built with OOP: a Piece base class with a subclass per piece. Detects check and checkmate, and validates moves by simulating them on a duplicate board.</p>
         <video src="assets/chess-preview.mp4" poster="assets/chess-poster.webp" autoplay muted loop playsinline preload="metadata" role="img" aria-label="Console Chess preview"></video>
         <div class="project-links">
-          <a href="https://github.com/DianaMLaC/Console-Chess" target="_blank">GitHub</a>
+          <a href="https://github.com/DianaMLaC/Console-Chess" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </div>
@@ -100,8 +110,8 @@
     <p>Interested in working together or have any questions?</p>
     <div class="contact-details">
       <a href="mailto:diana.m.chirica@gmail.com">diana.m.chirica@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/diana-chirica/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/DianaMLaC" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/diana-chirica/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/DianaMLaC" target="_blank" rel="noopener noreferrer">GitHub</a> |
       <a href="assets/Diana_M_Chirica_resume.pdf" download>Download CV</a>
     </div>
   </section>
