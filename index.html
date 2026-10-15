@@ -3,35 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diana M Chirica Portfolio</title>
+  <title>Diana M Chirica — Full-Stack Software Engineer (React, TypeScript, Rails)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=2.3">
+  <meta name="description" content="Full-stack software engineer building with React, TypeScript, and Ruby on Rails. Based in London.">
+  <meta name="author" content="Diana M Chirica">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dianamlac.github.io/portfolio/">
+  <meta property="og:title" content="Diana M Chirica — Full-Stack Software Engineer">
+  <meta property="og:description" content="Full-stack engineer building with React, TypeScript, and Ruby on Rails. Based in London.">
+  <meta property="og:image" content="https://dianamlac.github.io/portfolio/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diana M Chirica — Full-Stack Software Engineer">
+  <meta name="twitter:description" content="Full-stack engineer building with React, TypeScript, and Ruby on Rails. Based in London.">
+  <meta name="twitter:image" content="https://dianamlac.github.io/portfolio/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.ico">
 
 </head>
 <body>
   <!-- Hero Section -->
   <header class="hero">
-    <img src="assets/gradient-shape-short.png" alt="Gradient Shape" class="gradient-shape">
+    <img src="assets/gradient-shape-short.png" alt="" class="gradient-shape">
     <div class="vertical-nav">
       <a href="#projects" class="vertical-btn">Projects</a>
+      <a href="#about" class="vertical-btn">About</a>
       <a href="#contact" class="vertical-btn">Contact</a>
     </div>
     <div class="hero-main">
       <div class="hero-content">
         <h1>&lt;Diana M Chirica&gt;</h1>
-        <p>&lt;Full-Stack Software Engineer&gt;</p>
+        <p class="hero-tagline">&lt;Full-Stack Software Engineer&gt;</p>
+        <p class="hero-subline">React · TypeScript · Rails · Based in London</p>
       </div>
-      <img src="assets/my-photo-no-bg.png" alt="Diana" class="profile-photo">
+      <img src="assets/my-photo-no-bg.png" alt="Portrait of Diana M Chirica" class="profile-photo">
     </div>
   </header>
 
+  <main>
   <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I once viewed the tech realm with apprehension; now it’s my playground. Building functional, streamlined software is my creative outlet and intellectual challenge. I live for those ‘aha’ moments that turn problems into powerful, real-world applications.</p>
-    <img src="assets/gradient-waves-no-bg.png" alt="Gradient Waves" class="gradient-waves">
+    <p>Full-stack engineer at Lickd, working across React, TypeScript, and Ruby on Rails. I like problems that sit between product and infrastructure — schema design, real-time UX, the kind of thing that quietly falls apart at scale. Outside of work I build tools I'd want to use myself: a long-distance couples app, a budgeting app that takes ADHD friction seriously. Based in London.</p>
+    <img src="assets/gradient-waves-no-bg.png" alt="" class="gradient-waves" loading="lazy">
     <div class="tech-stack">
       <p>Ruby | TypeScript | JavaScript | SQL | HTML&CSS | Git</p>
       <p>React | Redux | Next.js | Rails | Rspec | AWS S3 | jQuery | Axios | PostgreSQL | WebSockets | Tailwind</p>
@@ -45,9 +65,8 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>Faebook</h3>
-        <p>A social platform built with Rails, React, and TypeScript. 
-          Features real-time chat, AWS S3 image uploads, and TDD. </p>
-        <img src="assets/faebook-preview.gif" alt="Faebook Preview">
+        <p>Social platform with a Zodiac Academy theme, built with Rails, React, and TypeScript. Real-time chat over ActionCable WebSockets, polymorphic post content with automatic URL preview parsing, image pipeline using ActiveStorage with on-the-fly S3 variants. Backend developed with TDD.</p>
+        <img src="assets/faebook-preview.gif" alt="Animated preview of Faebook showing real-time chat between two users" loading="lazy">
         <div class="project-links">
           <a href="https://faebook.fly.dev/" target="_blank">Live</a>
           <a href="https://github.com/DianaMLaC/faebook" target="_blank">GitHub</a>
@@ -56,27 +75,25 @@
 
       <div class="project-card">
         <h3>Quizardry</h3>
-        <p>A quiz app built with Next.js and Supabase for Google OAuth. 
-          Users can generate quizzes by category, difficulty, or random.</p>
-        <img src="assets/quizardry-preview.gif" alt="Quizardry Preview">
+        <p>Quiz platform built with Next.js 15 and TypeScript. Google OAuth via Supabase, dynamic question generation by category and difficulty, scoped styling with CSS Modules, animations with Framer Motion.</p>
+        <img src="assets/quizardry-preview.gif" alt="Animated preview of Quizardry showing quiz generation and interactions" loading="lazy">
         <div class="project-links">
-          <!-- <a href="#">Live</a> -->
+          <a href="PLACEHOLDER_QUIZARDRY_URL" target="_blank">Live</a>
           <a href="https://github.com/DianaMLaC/quizardry" target="_blank">GitHub</a>
         </div>
       </div>
       <div class="project-card">
         <h3>KDFG</h3>
-        <p> A community hub for k-drama lovers. Built robust and complex UI components using React.</p>
-        <img src="assets/kdfg-preview.gif" alt="KDFG Preview">
+        <p>Community hub for K-drama fans, built with React. [PLACEHOLDER: replace this sentence with two specific UI components you built and what was technically interesting about them.]</p>
+        <img src="assets/kdfg-preview.gif" alt="Animated preview of KDFG showing the community hub interface" loading="lazy">
         <div class="project-links">
           <a href="https://kdfg-frontend.vercel.app/" target="_blank">Live</a>
         </div>
       </div>
       <div class="project-card">
         <h3>Cupid Hearts</h3>
-        <p> A JavaScript game similar to Asteroids, powered by HTML Canvas and math-based 
-          collision logic.</p>
-        <img src="assets/cupid-hearts-preview.gif" alt="Cupid Hearts Preview">
+        <p>Asteroids-inspired browser game built with vanilla JavaScript and HTML Canvas. Vector physics for movement, math-based collision detection, sprite rendering.</p>
+        <img src="assets/cupid-hearts-preview.gif" alt="Animated preview of Cupid Hearts showing the asteroid-style game" loading="lazy">
         <div class="project-links">
           <a href="https://dianamlac.github.io/CupidHearts/" target="_blank">Live</a>
           <a href="https://github.com/DianaMLaC/CupidHearts" target="_blank">GitHub</a>
@@ -84,8 +101,8 @@
       </div>
       <div class="project-card">
         <h3>Console Chess</h3>
-        <p> A terminal-based two-player chess game developed by applying OOP principles and multi‐level inheritance.</p>
-        <img src="assets/chess-preview.gif" alt="Chess Preview">
+        <p>Terminal two-player chess game in Ruby, built around multi-level inheritance (Piece → SlidingPiece → Rook/Bishop/Queen). Includes board state validation and check/checkmate detection.</p>
+        <img src="assets/chess-preview.gif" alt="Animated preview of Console Chess showing the terminal board" loading="lazy">
         <div class="project-links">
           <a href="https://github.com/DianaMLaC/Console-Chess" target="_blank">GitHub</a>
         </div>
@@ -104,6 +121,7 @@
       <a href="assets/diana_chirica_resume.pdf" download>Download CV</a>
     </div>
   </section>
+  </main>
 
   <footer class="footer">
     <p>© Diana M Chirica. All rights reserved.</p>
